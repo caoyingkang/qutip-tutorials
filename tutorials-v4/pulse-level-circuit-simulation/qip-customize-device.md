@@ -89,9 +89,9 @@ class MyModel(Model):
         See examples later in this notebook.
         """
         return [
-            {f"sx{n}": r"$\sigma_x^%d$" % n for n in range(num_qubits)},
-            {f"sy{n}": r"$\sigma_z^%d$" % n for n in range(num_qubits)},
-            {f"g{n}": r"$g_{%d}$" % (n) for n in range(num_qubits - 1)},
+            {f"sx{n}": r"$\sigma_x^%d$" % n for n in range(self.num_qubits)},
+            {f"sy{n}": r"$\sigma_z^%d$" % n for n in range(self.num_qubits)},
+            {f"g{n}": r"$g_{%d}$" % (n) for n in range(self.num_qubits - 1)},
         ]
 ```
 
